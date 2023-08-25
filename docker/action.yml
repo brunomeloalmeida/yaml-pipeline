@@ -15,9 +15,6 @@ inputs:
   docker_password:
     description: "Docker password"
     required: true
-  docker_back_front: 
-    description: "Backend or Frontend"
-    required: true
   git_branch:
     description: "Branch"
     required: true
