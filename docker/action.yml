@@ -47,6 +47,8 @@ runs:
     - name: Docker Login
       uses: docker/login-action@v2.1.0
       with:
+        ${{ if inputs.registry_name }}: 
+          registry: ${{ inputs.registry_name }}
         username: ${{ inputs.docker_login }}
         password: ${{ inputs.docker_password }}
         logout: true
