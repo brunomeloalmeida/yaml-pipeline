@@ -62,5 +62,5 @@ runs:
           --label repository=${{ github.repository }}
           --label source-build=github
         tags: |
-          ${{ inputs.registry_name }}/${{ inputs.project_name }}:${{ inputs.tags }}
+          ${{ inputs.registry_name }}/${{ inputs.project_name }}:${{ inputs.tag }}
         push: true
