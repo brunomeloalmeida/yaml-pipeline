@@ -39,7 +39,6 @@ runs:
           EXTRACT_LAST_NUMBER=$(echo "$GITHUB_REF_NAME" | sed 's/.*\.//')
           echo "EXTRACT_LAST_NUMBER=$EXTRACT_LAST_NUMBER" >> $GITHUB_ENV
           echo "Extract: $EXTRACT_LAST_NUMBER"
-      if: ${{ inputs.docker_back_front }} == 'backend'
 
     - name: Docker Setup Buildx
       uses: docker/setup-buildx-action@v2.6.0
